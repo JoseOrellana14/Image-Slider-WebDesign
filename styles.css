@@ -10,6 +10,7 @@ header {
     grid-template-columns: 0.10fr 0.90fr;
     grid-template-rows: minmax(20px,55px);
     gap: 1em;
+    background-color: #333030;
 }
 header .Logo{
     display:flex;
@@ -18,16 +19,37 @@ header .Logo{
     justify-content: center;
     cursor: pointer;
 }
-header .navigation{
+header .navigation {
     display: grid;
-    grid-template-columns: 0.65fr 0.35fr;
+    grid-template-columns: 0.7fr 0.3fr;
     grid-template-rows: minmax(20px,55px);
-    align-items: center;
-    justify-items: center;
-    gap: 2rem;
-    transition: 0.5s ease;
-    margin-left: 20px;
+    gap: 1em;
 }
 .navigation-items {
-    width: 100%;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navigation-items span {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.Contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    gap: 1.5rem;
+}
+.Contact span {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+header .navigation a {
+    text-decoration: none;
 }
